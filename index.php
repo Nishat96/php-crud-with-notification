@@ -45,7 +45,7 @@
                 <a hr href="index.php?edit=<?php echo $row['id']; ?>" class="edit_btn">Edit</a>
             </td>
             <td>
-                <a href="server.php?del=<?php echo $row['id'] ?>"class="del_btn;">Delete</a>
+                <a onclick="return confirm('Delete this record?')" href="server.php?del=<?php echo $row['id'] ?>"class="del_btn;">Delete</a>
             </td>
         </tr>
   <?php }
